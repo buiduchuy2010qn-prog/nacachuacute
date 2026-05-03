@@ -164,9 +164,12 @@
             <svg viewBox="0 0 100 120" class="w-full h-full drop-shadow-xl idle-sway">
                 <path d="M50,30 C80,30 95,50 85,85 C75,110 25,110 15,85 C5,50 20,30 50,30 Z" fill="#ff5e5e" stroke="${c_red}" stroke-width="4" stroke-linejoin="round"/>
                 <path d="M50,30 Q45,15 55,10 M50,30 Q35,25 25,20 M50,30 Q65,25 75,20" fill="none" stroke="${c_green}" stroke-width="5" stroke-linecap="round"/>
-                <!-- Má hồng chung -->
-                <ellipse cx="28" cy="65" rx="6" ry="3" fill="#f43f5e" opacity="0.6"/>
-                <ellipse cx="72" cy="65" rx="6" ry="3" fill="#f43f5e" opacity="0.6"/>
+                <!-- Má hồng phong cách Anime bóng bẩy -->
+                <ellipse cx="26" cy="65" rx="7" ry="3.5" fill="#f43f5e" opacity="0.75" transform="rotate(-10 26 65)"/>
+                <ellipse cx="74" cy="65" rx="7" ry="3.5" fill="#f43f5e" opacity="0.75" transform="rotate(10 74 65)"/>
+                <!-- Ánh sáng lấp lánh trên má (Highlight) -->
+                <ellipse cx="23" cy="64" rx="2" ry="1" fill="#ffffff" transform="rotate(-15 23 64)"/>
+                <ellipse cx="77" cy="64" rx="2" ry="1" fill="#ffffff" transform="rotate(15 77 64)"/>
                 ${face}
             </svg>
         `;
@@ -180,12 +183,15 @@
                 <path d="M 45 40 C 35 55 65 55 55 40 C 60 25 40 25 45 40 Z" fill="${color}" stroke="${c_brown}" stroke-width="4" stroke-linejoin="round"/>
                 <path d="M 50 25 Q 45 15 55 20" fill="none" stroke="${color}" stroke-width="4" stroke-linecap="round"/>
                 <path d="M 50 25 Q 45 15 55 20" fill="none" stroke="${c_brown}" stroke-width="2" stroke-linecap="round"/>
-                <ellipse cx="35" cy="70" rx="5" ry="3" fill="#f43f5e" opacity="0.7"/>
-                <ellipse cx="65" cy="70" rx="5" ry="3" fill="#f43f5e" opacity="0.7"/>
+                <!-- Má hồng phong cách Anime bóng bẩy -->
+                <ellipse cx="34" cy="70" rx="5.5" ry="3" fill="#f43f5e" opacity="0.75" transform="rotate(-10 34 70)"/>
+                <ellipse cx="66" cy="70" rx="5.5" ry="3" fill="#f43f5e" opacity="0.75" transform="rotate(10 66 70)"/>
+                <!-- Ánh sáng lấp lánh trên má (Highlight) -->
+                <ellipse cx="31.5" cy="69" rx="1.5" ry="0.8" fill="#ffffff" transform="rotate(-15 31.5 69)"/>
+                <ellipse cx="68.5" cy="69" rx="1.5" ry="0.8" fill="#ffffff" transform="rotate(15 68.5 69)"/>
                 ${face}
             </svg>
         `;
-
 
         // Kho phần thưởng (23 món = 16 cũ + 4 cớt + 3 Na đặc biệt)
         const fullRewardPool = [
